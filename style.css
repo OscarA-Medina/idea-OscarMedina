@@ -153,13 +153,21 @@ li {
 
 .grid-item1 {
     grid-area: foto1;
-    width: 100%;
+    width: 50%;
+    margin: 50px;
+    border-radius: 6px;
 }
 .grid-item2 {
     grid-area: foto2;
+    width: 50%;
+    margin: 50px;
+    border-radius: 6px;
 }
 .grid-item3 {
     grid-area: foto3;
+    width: 50%;
+    margin: 50px;
+    border-radius: 6px;
     
 }
 
@@ -180,7 +188,15 @@ li {
 }
 
 .playlist7 {
-    padding: 50px 50px 50px 700px;
+    padding: 50px;
+}
+
+/* Transición sección Audio*/
+
+.box:hover {
+    transform: scale(1.7);
+    transition: all 1s;
+
 }
 
 /* Organización videos Proyectos Audiovisuales*/
