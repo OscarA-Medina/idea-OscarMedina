@@ -1,0 +1,253 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Cambio de fondo general del cuerpo*/
+body {
+    background-image: url("multimedia/images/fondooscuro1.jpg");
+}
+
+
+/* Enlaces sin punto y con cambio de color*/ 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+/* Organización de box-modeling de los enlaces iniciales*/
+
+.enlaces {
+    padding: 20px 0;
+    margin: 10px 10px;
+    border: 2px solid rgba(0, 0, 0, 0.712);
+    border-color: rgba(0, 0, 0, 0.356);
+}
+
+li {
+    margin: 10px 10px;
+}
+
+/* Flexbox menu enlaces*/
+
+.menu-container  {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 20px 0; 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+     
+}
+
+
+.menu {
+    border: 1px solid rgba(243, 237, 237, 0.863);
+    width:100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Cambio de color y tamaño de fuente del texto del enlace bio*/ 
+.bio-color{
+    color: rgba(240, 238, 238, 0.884);
+    font-size: 1.5em;
+}
+
+/* espacio y organización sección Bio*/
+
+.bio-titulo {
+    border: none;
+    width: 100%;
+    padding: 20px 50px 50px 20px;
+}
+
+.bio-box {
+    border: none;
+    width: 100%;
+    padding: 150px 0 150px 5px;
+}
+
+/* Cambio de color de la casilla de contacto*/
+.contacto-style{
+    color: rgba(240, 238, 238, 0.884);
+}
+
+
+/* Organización de tamaño de imágenes */
+
+.img-logoinicial{
+    width: 15%;
+}
+
+.img-productor{
+    width: 50%;
+    
+}
+
+.img-logos{
+    width: 5%;
+}
+
+.img-tapas{
+    width: 100%;
+}
+
+
+
+/* Flexbox imagenes */
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+/* Organización de márgenes y espacio en logos de redes*/
+
+.logos-redes{
+    padding: 5px 10px;
+    margin: 20px 10px;
+}
+
+/* Organización de espacio y Grid para sección Audio y playlist */
+
+.audio-model {
+    border: none;
+    margin: 50px;
+}
+
+.audio-box {
+    border: none;
+    padding: 0 0 30px 20px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 30%);
+    gap: 10px 15px;
+    grid-template-areas:
+    "foto1 audio4"
+    "foto2 audio5"
+    "foto3 audio6";
+}
+
+.grid-item1 {
+    grid-area: foto1;
+    width: 100%;
+}
+.grid-item2 {
+    grid-area: foto2;
+}
+.grid-item3 {
+    grid-area: foto3;
+    
+}
+
+.audio4 {
+    grid-area: audio4;
+    width: 100%;
+    padding: 130px 0 0 0;
+}
+.audio5 {
+    grid-area: audio5;
+    width: 100%;
+    padding: 130px 0 0 0;
+}
+.audio6 {
+    grid-area: audio6;
+    width: 100%;
+    padding: 130px 0 0 0;
+}
+
+.playlist7 {
+    padding: 50px 50px 50px 700px;
+}
+
+/* Organización videos Proyectos Audiovisuales*/
+
+.videoclips-titulo {
+    border: none;
+    padding: 30px 10px;
+    font-size: 20px;
+}
+
+.videos{
+    width: 50%;
+}
+
+.grid-video-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 30%);
+    gap: 10px 15px;
+    padding: 20px;
+    grid-template-areas:
+    "video1 video2"
+    "video3 video4";
+}
+
+.grid-video1 {
+    grid-area: video1;
+    width: 100%;
+
+}
+
+.grid-video2 {
+    grid-area: video2;
+    width: 100%;
+}
+
+.grid-video3 {
+    grid-area: video3;
+    width: 100%;
+}
+
+.grid-video4 {
+    grid-area: video4;
+    width: 100%;
+}
+
+
+/* Cambio de color y boxmodeling en ventanas "Proyectos Audiovisuales" y "Servicios" */
+
+.color-servicios{
+    color: rgba(240, 238, 238, 0.884) ;
+    font-size: 1.5em;
+}
+
+.encabezado-color{
+    color: rgba(240, 238, 238, 0.884);
+    padding: 50px;
+    
+}
+
+.titulos-color{
+    color: rgba(240, 238, 238, 0.884);
+    
+}
+
+.servicios-box {
+    border: 1px solid #fff;
+    margin: 20px;
+    font-size: 25px;
+}
